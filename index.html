@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Badwords</title>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js' integrity='sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==' crossorigin='anonymous'></script>
+
 </head>
 <body>
     <h1>BADWORDS</h1>
     <!-- form -->
-     <form action="dati_ricevuti.php" method="post">
+     <form action="dati-ricevuti.php" method="post">
         <label for="text">Inserisci il testo</label>
-        <input id="text" type="text" placeholder="scrivi qua il tuo testo" name="user_text" col="10"> <br>
+        <input id="text" type="text" placeholder="scrivi qua il tuo testo" name="userText"> <br>
         
         
         <label for="word">Inserisci la parola</label>
-        <input id="word" type="text" placeholder="scrivi la parola da censurare" name="user_word">
+        <input id="word" type="text" placeholder="scrivi la parola da censurare" name="userWord">
         <button type="submit">INVIA</button>
      </form>
 
