@@ -5,6 +5,10 @@ $badWord = $_POST['userWord'];
 
 $text_leng = strlen($text);
 
+$censored_text = str_replace($badWord, '***', $text);
+
+$censored_text_leng = strlen($censored_text);
+
 ?>
 
 
@@ -21,7 +25,13 @@ $text_leng = strlen($text);
 
     <h3>La lunghezza del testo è di:</h3>
     <p><?php echo $text_leng?> caratteri.</p>
+
+
+    <h2> Il testo censurato è:</h2>
+    <p><?php echo $censored_text ?></p>
+
+    <h3>La lunghezza del testo è di:</h3>
+    <p><?php echo $censored_text_leng?> caratteri.</p>
     
-    la parola è <?php echo $badWord ?>
 </body>
 </html>
