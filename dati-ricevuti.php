@@ -3,6 +3,7 @@
 $text = $_POST['userText'];
 $badWord = $_POST['userWord'];
 
+$text_leng = strlen($text);
 
 ?>
 
@@ -15,7 +16,12 @@ $badWord = $_POST['userWord'];
     <title>Document</title>
 </head>
 <body>
-    il testo scritto è: <?php echo $text ?>.
+    <h2> Il testo scritto è:</h2>
+    <p><?php echo $text ?></p>
+
+    <h3>La lunghezza del testo è di:</h3>
+    <p><?php echo $text_leng?> caratteri.</p>
+    
     la parola è <?php echo $badWord ?>
 </body>
 </html>
